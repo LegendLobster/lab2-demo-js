@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script language="javascript">
+        function multiplyNumbers() {
+            var num1 = parseFloat(prompt("Enter the first number: ", 0));
+            var num2 = parseFloat(prompt("Enter the second number: ", 0));
+            var result = num1 * num2;
+            alert("Multiplication result: " + result);
+        }
+
+        function divideNumbers() {
+            var num1 = parseFloat(prompt("Enter the first number: ", 0));
+            var num2 = parseFloat(prompt("Enter the second number: ", 1)); // Avoid division by zero
+            if (num2 === 0) {
+                alert("Error: Division by zero is not allowed.");
+            } else {
+                var result = num1 / num2;
+                alert("Division result: " + result);
+            }
+        }
+
+        function addNumbers() {
+            var num1 = parseFloat(prompt("Enter the first number: ", 0));
+            var num2 = parseFloat(prompt("Enter the second number: ", 0));
+            var result = num1 + num2;
+            alert("Addition result: " + result);
+        }
+
+        function getUserName() {
+            var firstName = prompt("Enter your first name: ");
+            var lastName = prompt("Enter your last name: ");
+            alert("Your name is " + firstName + " " + lastName);
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScript Operations</h1>
+    <button onclick="multiplyNumbers()">Multiply Numbers</button>
+    <button onclick="divideNumbers()">Divide Numbers</button>
+    <button onclick="addNumbers()">Add Numbers</button>
+    <button onclick="getUserName()">Get Your Name</button>
+</body>
+</html>
