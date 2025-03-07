@@ -1,41 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- This JavaScript functions that is used for various operations seen below here: MADE BY Gregory Karanasios -->
     <script language="javascript">
+        // This function here is used  to multiply two numbers
         function multiplyNumbers() {
+            // Prompts the user to enter a number
             var num1 = parseFloat(prompt("Enter the first number: ", 0));
+            // Prompts the user to enter a number
             var num2 = parseFloat(prompt("Enter the second number: ", 0));
+            // Multiplies the numbers
             var result = num1 * num2;
-            alert("Multiplication result: " + result);
+            // Display the result of the multiplications
+            alert("Result: " + result);
         }
 
+        // Here is the function to divide
         function divideNumbers() {
+            // Promps the user to enter a number
             var num1 = parseFloat(prompt("Enter the first number: ", 0));
-            var num2 = parseFloat(prompt("Enter the second number: ", 1)); // Avoid division by zero
+            // Promps the user to enter a number
+            var num2 = parseFloat(prompt("Enter the second number: ", 1)); // Avoids division of zero
+            // Check if the second number
             if (num2 === 0) {
-                alert("Error: Division by zero is not allowed.");
+                // Show an error message if division by zero is attempted
+                alert(" Division by zero is not allowed here.");
             } else {
+                // Perform the division if num2 is not zero.
                 var result = num1 / num2;
-                alert("Division result: " + result);
+                // Display the division result 
+                alert("Result: " + result);
             }
         }
 
+        // Function to add two numbers together:
         function addNumbers() {
+            // Prompt the user to enter a number
             var num1 = parseFloat(prompt("Enter the first number: ", 0));
+            // Prompt the user to enter a number
             var num2 = parseFloat(prompt("Enter the second number: ", 0));
+            // Add the two numbers and the result is stored here:
             var result = num1 + num2;
+            // Displays the result
             alert("Addition result: " + result);
         }
 
+        // Function to get the user's full name that he or she enters
         function getUserName() {
+            // Makes the user enter their first name:
             var firstName = prompt("Enter your first name: ");
+            // Makes the user enter their second name:
             var lastName = prompt("Enter your last name: ");
+            // Display the user's full name by adding it together
             alert("Your name is " + firstName + " " + lastName);
         }
     </script>
 </head>
 <body>
+    <!-- Heading of the page -->
     <h1>JavaScript Operations</h1>
+
+    <!-- Here the function get triggered by user's input -->
     <button onclick="multiplyNumbers()">Multiply Numbers</button>
     <button onclick="divideNumbers()">Divide Numbers</button>
     <button onclick="addNumbers()">Add Numbers</button>
